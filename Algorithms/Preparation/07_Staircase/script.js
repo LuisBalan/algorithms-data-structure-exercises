@@ -52,4 +52,22 @@ const goodArrayMaker = (input) => {
 }
 
 let testingArray = "aaBBccCCcbbbccdeeefgghiik11123344tttTt"
-console.log(goodArrayMaker(testingArray))
+//console.log(goodArrayMaker(testingArray))
+
+// exercise for make map
+
+let anArray = [1, 2, 3]
+
+function multiplier(array){
+    
+    let factor = 0.5;
+    let resultantArray = [];
+    for(let index = 0; index < array.length ; index++){
+        let newItem = array[index] * factor
+        resultantArray.push(newItem)
+    }
+
+    return resultantArray
+}
+
+console.log(multiplier(anArray))
