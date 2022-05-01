@@ -21,11 +21,13 @@ function getIndexToIns(arr, num){
             result = arr.length;
         }else{
             for(let i = 0; i < arr.length ; i++){
-                if(num <= arr[i]){
+                if(arr[i] <= num < arr[i + 1]){
                     result = i;
-                }else{
-                    null
                 }
+                // else{
+                //     result = num < arr[i + 1]
+                //     ? i + 1 : null
+                // }
             };
         };     
     };
@@ -33,8 +35,8 @@ function getIndexToIns(arr, num){
 };
 
 
-console.log(getIndexToIns([10, 20, 30, 40, 50], 35)) 
-console.log(getIndexToIns([10, 20, 30, 40, 50], 35))
+// console.log(getIndexToIns([10, 20, 30, 40, 50], 35)) 
+// console.log(getIndexToIns([10, 20, 30, 40, 50], 35))
 // console.log(getIndexToIns([10, 20, 30, 40, 50], 30))
 // console.log(getIndexToIns([10, 20, 30, 40, 50], 30))
 // console.log(getIndexToIns([40, 60], 50))
@@ -45,7 +47,7 @@ console.log(getIndexToIns([10, 20, 30, 40, 50], 35))
 // console.log(getIndexToIns([5, 3, 20, 3], 5))
 // console.log(getIndexToIns([2, 20, 10], 19))
 // console.log(getIndexToIns([2, 20, 10], 19))
-// console.log(getIndexToIns([2, 5, 10], 15))
-// console.log(getIndexToIns([2, 5, 10], 15))
-// console.log(getIndexToIns([], 1)) 
-// console.log(getIndexToIns([], 1))
+console.log(getIndexToIns([2, 5, 10], 15))
+console.log(getIndexToIns([2, 5, 10], 15))
+console.log(getIndexToIns([], 1)) 
+console.log(getIndexToIns([], 1))
