@@ -16,12 +16,9 @@ function chunkArrayInGroups(arr, size) {
           sizedArr.push(arr.shift());
         };
         arrsContainer.push(sizedArr);    
-      }else{
-        let sizedArr = [];
-        for(let i = 0; i < arr.length ; i++){
-          sizedArr.push(arr.shift());
-        };
-        arrsContainer.push(sizedArr);
+      }else if(arr.length < size){
+        arrsContainer.push(arr.slice())
+        break;
       };
     };
     return arrsContainer;
