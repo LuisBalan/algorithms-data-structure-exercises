@@ -1,4 +1,3 @@
-
 /*
 Return the lowest index at which a value (second argument)
 should be inserted into an array (first argument)
@@ -9,3 +8,12 @@ Likewise, getIndexToIns([20,3,5], 19) should return 2 because once
 the array has been sorted it will look like [3,5,20] and 19 is less
 than 20 (index 2) and greater than 5 (index 1).
 */
+
+function getIndexToIns(arr, num){
+    let result;
+    if(arr.length === 0){
+        result = 0
+    }else{
+
+    };
+};
