@@ -14,6 +14,9 @@ function getIndexToIns(arr, num){
     if(arr.length === 0){
         result = 0
     }else{
+        for(let i = 0; i < arr.length ; i++){
+            
+        }
 
     };
 };
